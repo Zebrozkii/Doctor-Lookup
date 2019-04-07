@@ -13,6 +13,12 @@ $(document).ready(function() {
     console.log(doctorSearch);
     let promise = doctorSearch.getName(searchName);
     console.log(promise);
-
+    promise.then(function(response){
+      $('#doctor-info').empty();
+      let body = JSON.parse(response);
+      var info = $('#doctor-info');
+      console.log(info);
+      
+    });
   });
 });
