@@ -9,5 +9,10 @@ $(document).ready(function() {
     event.preventDefault();
     let searchName = $('#nameInput').val();
     console.log(searchName);
+    let doctorSearch = new userSearch();
+    console.log(doctorSearch);
+    let promise = doctorSearch.getName(searchName);
+    console.log(promise);
+
   });
 });
