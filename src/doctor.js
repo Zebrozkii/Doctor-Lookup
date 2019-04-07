@@ -23,12 +23,11 @@ $(document).ready(function() {
         $('#doctorInfo').text("there are no doctors avaible for that");
       } else {
         for (var i = 0; i < info.length; i++) {
-          $('#doctorInfo').append(`<li><h3>${info[i].profile.first_name} ${info[i].profile.last_name} ${info[i].profile.title}</h3><li>`);
+          $('#doctorInfo').append(`<h3>${info[i].profile.first_name} ${info[i].profile.last_name} ${info[i].profile.title}</h3>`);
          $('#doctorInfo').append(`<li>Address: ${info[i].practices[0].visit_address.street} ${info[i].practices[0].visit_address.city} ${info[i].practices[0].visit_address.state} ${info[i].practices[0].visit_address.zip}</li>`);
          $('#doctorInfo').append(`<li>Phone: ${info[i].practices[0].phones[0].number} </li>`);
         }
       }
-
     });
   });
 });
