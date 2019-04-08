@@ -6,7 +6,7 @@
 
 ## Specifications
 * Input: "Smith"
-* Output: A list of Doctors with the name "Smith" appear with address, phone number,and website.
+* Output: A list of Doctors with the name "Smith" appear with address, phone number, and website.
 
 
 ### Setup Instructions
