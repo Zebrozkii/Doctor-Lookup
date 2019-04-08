@@ -29,8 +29,8 @@ $(document).ready(function() {
 
          if ('${info[i].practices.website}' !== undefined){
           $('#doctorInfo').append(`<li>Website: ${info[i].practices[0].website} </li>`);
-         }else {
-             $('#doctorInfo').append(`<li>"Website: No Website"</li>`);
+        } else{
+            $('#doctorInfo').append(`<li>Website: No Website </li>`);
            }
          }
         }
