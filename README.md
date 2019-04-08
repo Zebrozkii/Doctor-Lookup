@@ -5,6 +5,8 @@
  A web application that lets the user enter a certain medical information or a name and get back information using a API.
 
 ## Specifications
+* Input: "Smith"
+* Output: A list of Doctors with the name "Smith" appear with address, phone number,and website.
 
 
 ### Setup Instructions
