@@ -26,8 +26,15 @@ $(document).ready(function() {
           $('#doctorInfo').append(`<h3>${info[i].profile.first_name} ${info[i].profile.last_name} ${info[i].profile.title}</h3>`);
          $('#doctorInfo').append(`<li>Address: ${info[i].practices[0].visit_address.street} ${info[i].practices[0].visit_address.city} ${info[i].practices[0].visit_address.state} ${info[i].practices[0].visit_address.zip}</li>`);
          $('#doctorInfo').append(`<li>Phone: ${info[i].practices[0].phones[0].number} </li>`);
+
+         if ('${info[i].practices.website}' !== undefined){
+          $('#doctorInfo').append(`<li>Website: ${info[i].practices[0].website} </li>`);
+         }else {
+             $('#doctorInfo').append(`<li>"Website: No Website"</li>`);
+           }
+         }
         }
-      }
+
     });
   });
 });
